@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './styles/oak-pagination.scss';
 import OakSelect from './OakSelect';
+import OakSelectPlain from './OakSelectPlain';
 
 interface Props {
   onChangePage: any;
@@ -48,11 +49,12 @@ const OakPagination = (props: Props) => {
       <div className="oak-pagination--right">
         <div>{props.label ? props.label : 'Rows per page'}</div>
         <div>
-          <OakSelect
+          <OakSelectPlain
             data={data}
             id="rowsPerPage"
             handleChange={e => handleChange(e)}
             elements={['5', '10', '20', '50']}
+            variant="underline"
           />
         </div>
         <div className="page-number">

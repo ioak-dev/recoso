@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './styles/oak-heading-mockback.scss';
+import './styles/oak-heading-emailflow.scss';
 
 interface Props {
   size?: 'large';

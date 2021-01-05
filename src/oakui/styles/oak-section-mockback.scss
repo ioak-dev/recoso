@@ -1,17 +1,14 @@
 .oak-section {
-  background-color: var(--color-background-2);
-  box-shadow: var(--bs-md);
   margin: 30px;
-  padding: 40px 60px;
+  // padding: 40px 60px;
   animation: pageTransition 500ms cubic-bezier(0, 1, 0.5, 1);
   @media (max-width: 767px) {
     //   padding: 10px;
-    margin: 10px;
-    padding: 20px 10px;
+    margin: 15px;
   }
   .app-text {
     margin: auto;
-    // width: 80%;
+    width: 80%;
     @media (max-width: 767px) {
       width: 100%;
     }

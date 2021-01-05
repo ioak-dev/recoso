@@ -12,7 +12,7 @@ interface Props {
   first?: string;
   firstAction?: string;
   disabled?: boolean;
-  variant?: 'outline' | 'no-outline' | 'block' | 'normal';
+  variant?: 'regular' | 'underline';
   theme?: 'primary' | 'secondary' | 'tertiary' | 'default';
   width?: 'width-25' | 'width-50' | 'width-75' | 'width-100';
 }
@@ -60,7 +60,7 @@ const OakSelectPlain = (props: Props) => {
   }
 
   return (
-    <div className="oak-select-plain">
+    <div className={`oak-select-plain ${getStyle()}`}>
     {props.label && (
       <label
         htmlFor={props.id}
@@ -72,7 +72,7 @@ const OakSelectPlain = (props: Props) => {
       <select
         onChange={props.handleChange}
         name={props.id}
-        className="select"
+        className={`select ${getStyle()}`}
         value={props.data[props.id]}
         disabled={props.disabled}
       >
